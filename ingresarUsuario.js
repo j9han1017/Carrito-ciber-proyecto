@@ -37,6 +37,14 @@ function tecladoInicioCARRITOCIBER(e) {
         location.href="ingresarUsuario.html"
         
     }
-    
+    // evento teclado nombre y contraseña .focus() se pueda cambiar la direccion de el lugar donde escribimos con las teclas arriba y abajo
+    if (codigo_tecla==40) {
+        document.querySelectorAll(".inputInicio")[1].focus()
+        
+    }
+    if (codigo_tecla==38) {
+        document.querySelectorAll(".inputInicio")[0].focus()
+        
+    }
 }
 
