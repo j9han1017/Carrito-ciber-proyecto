@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body{
+
+font-family: 'Anton', sans-serif;
+}
+
+#caja-superior {
+    position: relative;
+    padding: 10px;
+    height: 30px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    border-bottom: 1px solid #ccc; 
+}
+
+#tres-lineas {
+    position: absolute;
+    left: 10px;
+    height: 30px;
+    width: auto;
+    margin: 0;
+}
+
+#buscar {
+    position: absolute;
+    left: 1300px;
+    width: auto;
+    margin: 0;
+}
+#boton-buscar{
+    font-family: 'Anton', sans-serif;
+    height: 33px;
+    border-radius: 6px;
+    border: none;
+}
+
+#buscar-texto{
+    font-family: 'Anton', sans-serif;
+    height: 25px;
+    border-radius: 6px ;
+}
+
+#logo{
+    position: absolute;
+    height: 50px;
+    left: 600px;
+}
