@@ -4,8 +4,8 @@ body{
 
 font-family: 'Anton', sans-serif;
 }
-
-#caja-superior {
+/* Aca comienza la parte superior */
+#seccion-caja-superior {
     position: relative;
     padding: 10px;
     height: 30px;
@@ -23,9 +23,9 @@ font-family: 'Anton', sans-serif;
     margin: 0;
 }
 
-#buscar {
+#seccion-buscar {
     position: absolute;
-    left: 1300px;
+    left: 1500px;
     width: auto;
     margin: 0;
 }
@@ -45,5 +45,44 @@ font-family: 'Anton', sans-serif;
 #logo{
     position: absolute;
     height: 50px;
-    left: 600px;
+    left: 700px;
 }
+
+/* Aca comienza la parte de articulos */
+
+.container-articulos{
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 240px;
+    height: 350px;
+    border-radius: 1rem;
+    background: #605dff;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: opacity 0.6s ease;
+}
+
+.box img {
+    /* Ajustar la imagen dentro del contenedor */
+    max-width: 100%; /* Ajustar al ancho máximo del contenedor */
+    max-height: 100%; /* Ajustar a la altura máxima del contenedor */
+    object-fit: contain; /* Redimensionar la imagen manteniendo la proporción */
+}
+
+.container-articulos:hover > :not(:hover) {
+    opacity: 0.5;
+}
+
+.etiqueta-producto{
+    margin: 0%;
+}
+
