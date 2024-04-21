@@ -12,7 +12,9 @@ function inicioCARRITOCIBER() {
     if (nombre=="leonel" && contraseña=="123"|| nombre=="leo" && contraseña=="123"|| nombre=="LEONEL" && contraseña=="123"|| nombre=="Leonel" && contraseña=="123") {
         location.href="index.html"    
     }
-    
+    if (nombre=="diaz" && contraseña=="123"|| nombre=="Diaz" && contraseña=="123"|| nombre=="DIAZ" && contraseña=="123"|| nombre=="diaZ" && contraseña=="123") {
+        location.href="index.html"    
+    }
 }
 
 function tecladoInicioCARRITOCIBER(e) {
