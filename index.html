@@ -7,28 +7,60 @@
     <title>Document</title>
     <style>
         #caja-superior {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            position: relative;
+            padding: 10px;
+            height: 30px;
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            border-bottom: 1px solid #ccc; 
         }
+
         #tres-lineas {
-height: 50px;
+            position: absolute;
+            left: 10px;
+            height: 30px;
+            width: auto;
+            margin: 0;
         }
+
+        #buscar {
+            position: absolute;
+            left: 1320px;
+            height: 50px;
+            width: auto;
+            margin: 0;
+        }
+        #boton-buscar{
+            height: 33px;
+            background-color: #41B06E;
+            border-radius: 10px;
+            border: none;
+        }
+        
+        #buscar-texto{
+            height: 25px;
+        }
+
+        #logo{
+            position: absolute;
+            height: 50px;
+            left: 600px;
+        }
+
+
     </style>
 </head>
 
 <body>
     <div id="caja-superior">
         <img id="tres-lineas" src="./assest/tres-lineas.png" alt="">
-        <img id="logo"  src="./assest/logo_carrito_ciber.png" alt="">
-        <div>
-            <input type="text" name="" id="">
-        <button>Buscar</button>
-        <p>DIAZ es un puto xd</p>
-        <p>hola Diaz 123456789 </p>
-        <p>MANDAR A PC DIAZ</p>
-        <p>hola de nuevo </p>
-    </div>
+        <img id="logo" src="./assest/logo_carrito_ciber.png" alt="">
+        <div id="buscar">
+            <input type="text" name="" id="buscar-texto">
+            <button id="boton-buscar">Buscar</button>
+
+        </div>
     </div>
 </body>
 
