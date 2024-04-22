@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-body{
-
-font-family: 'Anton', sans-serif;
+body {
+    font-family: 'Anton', sans-serif;
 }
+
 /* Aca comienza la parte superior */
 #seccion-caja-superior {
     position: relative;
     padding: 10px;
-    height: 30px;
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    border-bottom: 1px solid #ccc; 
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
 }
 
 #tres-lineas {
@@ -25,32 +25,35 @@ font-family: 'Anton', sans-serif;
 
 #seccion-buscar {
     position: absolute;
-    left: 1500px;
+    left: 80%;
+    
     width: auto;
     margin: 0;
 }
-#boton-buscar{
+
+#boton-buscar {
     font-family: 'Anton', sans-serif;
     height: 33px;
     border-radius: 6px;
     border: none;
 }
 
-#buscar-texto{
+#buscar-texto {
     font-family: 'Anton', sans-serif;
     height: 25px;
-    border-radius: 6px ;
+    border-radius: 6px;
 }
 
-#logo{
+#logo {
     position: absolute;
     height: 50px;
-    left: 700px;
+    left: 43%;
+    /* Este valor parece incorrecto, deberías ajustarlo */
 }
 
 /* Aca comienza la parte de articulos */
 
-.container-articulos{
+.container-articulos {
     display: flex;
     gap: 1rem;
     flex-direction: row;
@@ -71,17 +74,38 @@ font-family: 'Anton', sans-serif;
     transition: opacity 0.6s ease;
 }
 
-.box img {    
-    max-width: 100%; 
+.box img {
+    max-width: 100%;
     max-height: 100%;
-    object-fit: contain; 
+    object-fit: contain;
 }
 
-.container-articulos:hover > :not(:hover) {
+.container-articulos:hover>.box:not(:hover) {
     opacity: 0.5;
 }
 
-.etiqueta-producto{
+.etiqueta-producto {
     margin: 0%;
 }
 
+/* Media queries para diferentes tamaños de pantalla */
+@media only screen and (max-width: 768px) {
+
+    /* Estilos para pantallas de hasta 768px de ancho */
+    #seccion-buscar {
+        left: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* Estilos para pantallas de hasta 480px de ancho */
+    .container-articulos {
+        padding: 10px;
+    }
+
+    .box {
+        width: 100%;
+        /* O cualquier otro estilo que desees aplicar */
+    }
+}
