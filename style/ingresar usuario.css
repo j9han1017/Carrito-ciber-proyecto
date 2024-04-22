@@ -40,7 +40,7 @@ body{
     width: 200px;
     margin: 10px;
 }
-#botonCrearCuenta{
+.botonCrearCuenta{
     background-color: rgb(0, 255, 64);
     font-family: 'Anton', sans-serif;
     border: 1px solid rgb(255, 247, 0);
@@ -80,4 +80,4 @@ h3{
     color: rgb(0, 255, 64);
     font-size: 30px;
 }
-/* index.html 👇 */
+/* crear cuenta 👇 */
