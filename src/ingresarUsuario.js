@@ -93,7 +93,7 @@ function tecladoCrearCuenta(e) {
 
 function nuevaCuenta() {
 // se selecionan los valores de el input y se almasenan en la los let correspondientes
-    let nuevoUsuario=document.querySelectorAll(".inputInicio")[2].value
+    let nuevoUsuario=document.querySelectorAll(".inputInicio")[2].value.toLowerCase()
     let nuevocontraseña=document.querySelectorAll(".inputInicio")[3].value
 // mando los valores a el array=cuentas por el metodo push 
 let mandar=cuentas.push({nombre:nuevoUsuario,contraseña:nuevocontraseña})
