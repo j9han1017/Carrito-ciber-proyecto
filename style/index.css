@@ -72,13 +72,20 @@ body {
     flex-direction: column;
     cursor: pointer;
     transition: opacity 0.6s ease;
+    position: relative;
 }
 
 .box img {
-    max-width: 100%;
-    max-height: 100%;
+    height: auto;
+    width: 240px;
     object-fit: contain;
 }
+
+.box img.carro {
+    position: absolute;
+    bottom: -9px;
+    height: 51px;
+    left: 99px;}
 
 .container-articulos:hover>.box:not(:hover) {
     opacity: 0.5;
@@ -127,10 +134,7 @@ body {
         /* O cualquier otro estilo que desees aplicar */
     }
 
-    #seccion-buscar {
-        
-    }
-
+    
     #logo {
         left: 21%;
     }
