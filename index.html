@@ -9,8 +9,60 @@
 </head>
 
 <body>
+    <!-- sidebar -->
+    <nav>
+        <div class="sidebar-top">
+          <span class="expand-btn">
+            <img src="./assest/chevron.svg" alt="Chevron">
+          </span>
+          <img
+            src="./assest/logo_carrito_ciber.png"
+            class="logo"
+            alt="Laplace Logo"
+          >
+          <h3 class="hide"></h3>
+        </div>
+        <div class="sidebar-links">
+          <ul>
+            <li>
+              <a href="#categorias" class="active" title="Portfolio link">
+                <div class="icon">
+                  <img src="./assest/categorias.png" title="Portfolio Icon">
+                </div>
+                <span class="link hide">Categorias</span>
+              </a>
+            </li>
+            <li>
+              <a href="#ofertas" title="Analytics link">
+                <div class="icon">
+                    <img src="./assest/ofertas.png" title="Analytics Icon">
+                </div>
+                <span class="link hide">Ofertas</span>
+              </a>
+            </li>
+            <li>
+              <a href="#vender" title="Performance link">
+                <div class="icon">
+                    <img src="./assest/vender.png" title="Performance Icon">
+                </div>
+                <span class="link hide">Vender</span>
+              </a>
+            </li>
+            <li>
+              <a href="#ajustes" title="Reports Link">
+                <div class="icon">
+                    <img src="./assest/ajustes.png" title="Reports Icon">
+                </div>
+                <span class="link hide">Ayuda y configuraciones</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Articulos -->
+      <div id="container-articulos-caja-superior">
     <div id="seccion-caja-superior">
-        <img id="tres-lineas" src="./assest/tres-lineas.png" alt="">
+        
         <img id="logo" src="./assest/logo_carrito_ciber.png" alt="">
         <div id="seccion-buscar">
             <input type="text" name="" id="buscar-texto">
@@ -123,6 +175,8 @@
             <p class="precio-producto">COP 2.000</p>
             <img src="./assest/carro-de compras.jpg" alt="" class="carro">
         </div>
+      </div>
+        <script src="./src/sidebar.js"></script>
 </body>
 
 </html>
