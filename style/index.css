@@ -236,6 +236,13 @@ body.collapsed .expand-btn img {
     cursor: pointer;
     transition: opacity 0.6s ease;
     position: relative;
+    border: 2px solid white;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.box:hover {
+  border-color: red; /* Cambia el color del borde cuando el cursor está sobre el elemento */
 }
 
 .box img {

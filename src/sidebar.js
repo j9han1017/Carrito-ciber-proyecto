@@ -1,3 +1,9 @@
+function cambiarColor(elemento) {
+  elemento.style.borderColor = "blue"; // Cambia el color del borde al hacer clic
+}
+
+
+
 const expand_btn = document.querySelector(".expand-btn");
 
 let activeIndex;
@@ -23,3 +29,4 @@ allLinks.forEach((elem) => {
     });
   })
 });
+
