@@ -4,7 +4,7 @@
 body{
        
         font-family: 'Anton', sans-serif;
-        background-color: #9b99f9;
+        background-color: #625bfe;
         }
 
       
@@ -12,7 +12,7 @@ body{
 .caja-boton{
 	margin-top:30px;
 	text-align:center;
-    background-color: #9b99f9;
+    background-color: #625bfe;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -23,13 +23,13 @@ body{
     
 	text-align:center;
     margin: 120px 0px 0px 0px;
-    background-color: #9b99f9;
+    background-color: #625bfe;
   
 }
 .caja-contraseña{
     margin-top:30px;
 	text-align:center;
-    background-color: #9b99f9;
+    background-color: #625bfe;
     
 }
 #botonIngresar{
@@ -42,12 +42,12 @@ body{
     cursor: pointer;
 }
 #botonIngresar:hover{
-    background-color: transparent;
+    background-color: #9b99f9;
     color: #ffffff;
 
 }
 .botonCrearCuenta:hover{
-    background-color: transparent;
+    background-color: #9b99f9;
     color: #ffffff;
 }
 .botonCrearCuenta{
@@ -87,7 +87,7 @@ h2{
 h3{
     text-shadow: 5px 5px black;
     text-align-last: center;
-    color: #605dff;
+    color: #625bfe;
     font-size: 30px;
 }
 /* crear cuenta 👇 */
