@@ -16,7 +16,11 @@ Este proyecto es una implementación básica de una tienda en línea con funcion
 
 
 ## Tecnologías Utilizadas 💻
- HTML, CSS, JavaScript
+<div align="center">
+  <a href="https://skillicons.dev/icons?i=html,css,js,vscode&theme=light&perline=13">
+    <img src="https://skillicons.dev/icons?i=html,css,js,vscode&theme=light&perline=13" alt="My Skills">
+  </a>
+</div>
 
 ## Instalación
 
