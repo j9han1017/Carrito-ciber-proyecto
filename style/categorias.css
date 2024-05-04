@@ -1,0 +1,52 @@
+
+h1{
+    display: grid;
+    justify-content: center;
+}
+
+
+.container-categorias {
+    gap: 0.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.grid-item {
+    background: #605dff ;
+    height: 12rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    border-color: black;
+    width: 12rem;
+
+}
+
+.grid-item:hover{
+    border-color: black;
+}
+
+img {
+    height: 9rem;
+}
+
+.imagen-descripcion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+
+
