@@ -7,22 +7,39 @@ let productos=[
 ]
 
 function iniciarPagina(){
-  document.querySelectorAll(".box")[0].onclick=cambiarColor
+
   for (let i = 0; i < productos.length; i++) {
     document.querySelectorAll(".container-articulos")[0].insertAdjacentHTML("beforeend",`
-        <div class="box">
-        <img src="${productos[i].imagen}" alt="">
+        <div class="box" producto="${i}">
+            <img src="${productos[i].imagen}" alt="">
             <p class="etiqueta-producto">${productos[i].nombre}</p><br>
             <p class="precio-producto">COP ${productos[i].precio}</p>
             <img src="./assest/carro-de compras.jpg" alt="" class="carro">
         </div>`
     )
+
+    document.querySelectorAll(".box")[i].onclick=cambiarColor
+    document.querySelector("#boton-buscar").onclick=buscarProducto
   }
 }
 
-
 function cambiarColor() {
-  document.querySelectorAll(".box")[0].style.borderColor = "blue"; // Cambia el color del borde al hacer clic
+  let i =Number(this.getAttribute("producto"))
+  document.querySelectorAll(".box")[i].style.borderColor = "blue"; // Cambia el color del borde al hacer clic
+}
+
+function buscarProducto() {
+  // minuscolas = toLowerCase() mayusculas = toLocaleUpperCase()
+
+  let inputBuscarTexto=document.querySelector("#buscar-texto").value.toLowerCase()
+
+for (let i = 0; i < productos.length; i++) {
+
+  if (inputBuscarTexto==productos[i].nombre.toLowerCase()) {
+    console.log("producto " + inputBuscarTexto + " encontrad o " + productos[i].nombre.toLowerCase())
+  }
+  
+}
 }
 
 
