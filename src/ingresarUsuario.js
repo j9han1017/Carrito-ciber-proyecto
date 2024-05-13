@@ -26,7 +26,6 @@ function inicioCARRITOCIBER() {
     
     // por medio de if,else if se esta comprobando si existe el usuario y si no mostrar un mensaje que diga si el usuario puso mal el la contraseña o el usuario 
     if (cuentas[k].nombre==nombreInput && cuentas[k].contraseña==contraseñaInput) {
-        alert("soy " +cuentas[k].nombre )
         location.href="index.html"  
     }else if(nombreInput==nombreCuenta && cuentas[k].contraseña!=contraseñaInput ){
     // se muestra un mensaje de "contraseña incorrecta y se elimina automaticamente la contraseña puesta anterios mente y se pone el puntero dentro de el input contraseña o document.querySelectorAll(".inputInicio")[1].focus() "
@@ -35,10 +34,12 @@ function inicioCARRITOCIBER() {
         document.querySelectorAll(".inputInicio")[1].value=""
         let incorrecta = document.querySelectorAll(".mensaje")[0].innerHTML=`contraseña incorrecta` 
         return incorrecta
+    }else{
+        document.querySelectorAll(".mensaje")[0].innerHTML=`no existe`
     }
-    if(nombreInput!=nombreCuenta||nombreInput!=nombreCuenta && cuentas[k].contraseña!=contraseñaInput){
-       document.querySelectorAll(".mensaje")[0].innerHTML=`no existe`
-    }
+    // if(nombreInput!=nombreCuenta||nombreInput!=nombreCuenta && cuentas[k].contraseña!=contraseñaInput){
+    //    document.querySelectorAll(".mensaje")[0].innerHTML=`no existe`
+    // }
     
     }
    
