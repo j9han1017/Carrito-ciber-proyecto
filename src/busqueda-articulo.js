@@ -18,11 +18,10 @@ function iniciarPagina() {
               <img src="./assest/carro-de compras.jpg" alt="" class="carro">
           </div>`
     )
-
+    document.querySelector(".container-articulos").style = null
     document.querySelectorAll(".box")[i].onclick = cambiarColor
     // se muestra los productos o se ocultan si el usuario esta o no escribiendo para buscar un producto
     document.querySelector("#buscar-texto").addEventListener('input', ocultarProductos)
-    document.querySelector("#boton-buscar").onclick = buscarProducto
   }
 }
 
@@ -34,14 +33,16 @@ function ocultarProductos() {
   // oculta los productos si el usuario esta escribiendo o los muestra si no.
   let inputTexto = document.querySelector("#buscar-texto")
   if (inputTexto.value) {
+    document.querySelector("#boton-buscar").disabled= false
     document.querySelector(".container-articulos").style.display = "none"
     document.querySelector("#buscar-texto").focus()
+    document.querySelector("#buscar-texto").addEventListener('input',  buscarProducto)
   } else {
-    document.querySelector(".container-articulos").style.display = "block"
-    document.querySelector(".container-articulos").style = null
+    reiniciar()
   }
 
 }
+
 function buscarProducto() {
   // minuscolas = toLowerCase() mayusculas = toLocaleUpperCase()
 
@@ -50,10 +51,32 @@ function buscarProducto() {
   for (let i = 0; i < productos.length; i++) {
 
     if (inputBuscarTexto == productos[i].nombre.toLowerCase()) {
+
+      document.querySelectorAll(".container-articulos")[0].innerHTML=""
+      document.querySelector(".container-articulos").style.display = "block"
+      document.querySelectorAll(".container-articulos")[0].insertAdjacentHTML("beforeend", `
+      <div class="box" producto="${i}">
+          <img src="${productos[i].imagen}" alt="">
+          <p class="etiqueta-producto">${productos[i].nombre}</p><br>
+          <p class="precio-producto">COP ${productos[i].precio}</p>
+          <img src="./assest/carro-de compras.jpg" alt="" class="carro">
+      </div>`)
+
+      document.querySelector(".container-articulos").style = null
       console.log("producto " + inputBuscarTexto + " encontrad o " + productos[i].nombre.toLowerCase())
     }
 
+
   }
+  document.querySelector("#boton-buscar").onclick = reiniciar
+}
+function reiniciar() {
+  // cuando el usuario le de click o no tenga nada en el input este se reiniciara y estara en inicio nueva mente des pues de encomtrar en producto
+  document.querySelector("#buscar-texto").value=""
+  document.querySelector("#boton-buscar").disabled= true
+  document.querySelectorAll(".container-articulos")[0].innerHTML=""
+  document.querySelector(".container-articulos").style = null
+  iniciarPagina()
 }
 
 
