@@ -2,17 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 body{
-       
         font-family: 'Anton', sans-serif;
-        background-color: #625bfe;
+        background: url(../assest/imgPagina/PhotoRoom-20240611_143556.png);
+        background-size: 550px;
+        background-color: #8000f8;
+        background-position: 100px;
         }
-
-      
-
+#caja1{
+    display: flex;
+    align-items: center;
+    font-size: 200%;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    justify-content: space-between;
+    flex-direction: column;
+}
+#caja1 img{
+    width: 300px;
+}
 .caja-boton{
-	margin-top:30px;
+	margin-top:10px;
 	text-align:center;
-    background-color: #625bfe;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -20,15 +30,16 @@ body{
   
 }
 .caja-nombre{
-    
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
 	text-align:center;
-    margin: 120px 0px 0px 0px;
-    background-color: #625bfe;
+    margin: 40px 0px 0px 0px;
+    background-color: transparent;
   
 }
 .caja-contraseña{
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
 	text-align:center;
-    background-color: #625bfe;
+    background-color: transparent;
     
 }
 .mensaje{
@@ -39,30 +50,32 @@ body{
     padding: 20px;
 }
 #botonIngresar{
-    background-color: #605dff;
+    background-color: #8000f8;
     font-family: 'Anton', sans-serif;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 5px ;
     width: 200px;
     margin: 10px;
     cursor: pointer;
+    color: #ffffff;
 }
 #botonIngresar:hover{
-    background-color: #9b99f9;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #8000f8;
 
 }
 .botonCrearCuenta:hover{
-    background-color: #9b99f9;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #8000f8;
 }
 .botonCrearCuenta{
-    background-color: #605dff;
+    background-color: #8000f8;
     font-family: 'Anton', sans-serif;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 5px ;
     width: 200px;
     margin: 10px;
+    color: #ffffff;
 }
 .inputInicio{
 	padding:7px;
@@ -75,25 +88,5 @@ body{
 	color:#605dff;
     font-family: 'Anton', sans-serif;
 }
-#imagenLogo{
-    display: flex;
-    justify-content: center;
-}
-h1{
-    text-shadow: 5px 5px black;
-    text-align-last: center;
-    color: red;
-    font-size: 50px;
-}
-h2{
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-}
-h3{
-    text-shadow: 5px 5px black;
-    text-align-last: center;
-    color: #625bfe;
-    font-size: 30px;
-}
+
 /* crear cuenta 👇 */
