@@ -47,8 +47,6 @@ function inicioCARRITOCIBER() {
 }
 function crearCuentaNueva() {
     document.querySelector("#caja1").style.display="none"
-    document.querySelector("#caja-nombre").style.display="none"
-    document.querySelector("#caja-contraseña").style.display="none"
     document.querySelector("#caja2").style.display="block"
     document.querySelectorAll(".inputInicio")[2].focus()
     document.querySelectorAll(".caja-nombre")[1].onkeydown=tecladoCrearCuenta
