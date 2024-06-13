@@ -2,11 +2,11 @@
 
 
 :root {
-    --primary-color: #625BFE;
-    --primary-color-dark: #7771F6;    
-    --button-color: #5433FF;
+    --primary-color: #6e2fc6;
+    --primary-color-dark: #ffffff;    
+    --button-color: #4fa6e6;
     --button-color-shadow: #5433FF30;
-    --text-color: white;
+    --text-color: rgb(0, 0, 0);
 }
 
 * {
@@ -17,6 +17,15 @@
 
 body {
   font-family: Mulish, sans-serif;
+  background:url(../assest/imgPagina/PhotoRoom-20240613_124827.png);
+  background-size: 500px;
+  background-color: #ffffff;
+  /* background-color: rgb(255, 255, 255); */
+  /* background-repeat: no-repeat; */
+  background-position: 50% 50% ;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+
 }
 
 .background {
@@ -46,6 +55,8 @@ nav {
     flex-direction: column;
     transition: width 0.5s ease-in-out;
     z-index: 1;
+    border-right: 5px solid rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
 }
 
 main {
@@ -169,7 +180,9 @@ body.collapsed .expand-btn img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #ccc;
+    background-color: #6e2fc6;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255) inset,0px 0px 10px rgb(255, 255, 255);
+    /* border-bottom: 1px solid #ccc; */
 }
 
 #tres-lineas {
@@ -183,7 +196,6 @@ body.collapsed .expand-btn img {
 #seccion-buscar {
     position: absolute;
     left: 80%;
-    
     width: auto;
     margin: 0;
 }
@@ -198,12 +210,15 @@ body.collapsed .expand-btn img {
 #buscar-texto {
     font-family: 'Anton', sans-serif;
     height: 25px;
-    border-radius: 6px;
+    border-radius: 10px;
+    border-style: unset;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255) inset, 0px 0px 10px rgb(255, 255, 255);
 }
 
 #logo {
+    background-color: transparent;
     position: absolute;
-    height: 50px;
+    height: 100px;
     left: 43%;
     /* Este valor parece incorrecto, deberías ajustarlo */
 }
@@ -217,7 +232,8 @@ body.collapsed .expand-btn img {
     justify-content: center;
     padding: 20px;
     flex-wrap: wrap;
-    margin-left: 250px
+    margin-left: 250px;
+   
 }
 
 .container-articulos-caja-superior{
@@ -229,7 +245,7 @@ body.collapsed .expand-btn img {
     width: 240px;
     height: 350px;
     border-radius: 1rem;
-    background: #605dff;
+    background: #6e2fc6;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -242,13 +258,14 @@ body.collapsed .expand-btn img {
 }
 
 .box:hover {
-  border-color: red; /* Cambia el color del borde cuando el cursor está sobre el elemento */
+  border-color: #ffdb9c; /* Cambia el color del borde cuando el cursor está sobre el elemento */
 }
 
 .box img {
-    height: auto;
-    width: 240px;
-    object-fit: contain;
+  height: auto;
+  width: 226px;
+  object-fit: contain;
+  border-radius: 10px;
 }
 
 .box img.carro {

@@ -145,6 +145,9 @@ nav:hover .expand-btn,
   transition: all 100ms ease-in;
   border-radius: 0.625rem;
 }
+.active{
+  text-decoration: none;
+}
 
 body.collapsed nav {
   width: 5rem;
